@@ -1,7 +1,5 @@
 # React Component Shell
 
-## 🚧🚧🚧
+## Future package of something quite cool :))
 
-Content is under construction.
-
-## 🚧🚧🚧
+If you are a visitor, check back soon.
