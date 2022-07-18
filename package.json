@@ -17,5 +17,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"no test specified\" && exit 0"
+  },
+  "dependencies": {
+    "immer": "^9.0.15",
+    "secure-event-emitter": "^2.0.0"
   }
 }
