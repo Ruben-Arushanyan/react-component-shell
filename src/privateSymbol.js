@@ -1,6 +1,6 @@
 
 const privateSymbol = Symbol()
 
-module.exports = {
+export {
     privateSymbol,
 }

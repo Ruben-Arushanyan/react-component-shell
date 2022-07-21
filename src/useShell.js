@@ -1,11 +1,11 @@
-const {useContext} = require('react')
+import {useContext} from 'react'
 
-const { ShellContext } = require('./ShellProvider')
+import { ShellContext } from './ShellProvider'
 
 const useShell = () => {
     return useContext(ShellContext)
 }
 
-module.exports = {
+export {
     useShell, 
 }

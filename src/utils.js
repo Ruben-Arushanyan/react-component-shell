@@ -10,7 +10,7 @@ const isConstructable = fn => {
   }
 }
 
-module.exports = {
+export {
   isFunction,
   isString,
   isObject,

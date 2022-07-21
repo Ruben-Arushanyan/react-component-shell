@@ -1,15 +1,15 @@
-const {
+import {
     useState,
-} = require('react')
-const {
+} from 'react'
+import {
     useShell,
-} = require('./useShell')
-const {
+} from './useShell'
+import {
     useListener,
-} = require('secure-event-emitter/react')
-const {
+} from 'secure-event-emitter/react'
+import {
     isFunction,
-} = require('./utils')
+} from './utils'
 
 const useShellState = (selector) => {
     if (!isFunction(selector)) {
@@ -28,6 +28,6 @@ const useShellState = (selector) => {
     return selectedState
 }
 
-module.exports = {
+export {
     useShellState,
 }
