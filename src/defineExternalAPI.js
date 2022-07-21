@@ -1,9 +1,10 @@
-const {
+import {
     isConstructable,
     isFunction,
-} = require('./utils')
-
-const {privateSymbol} = require('./privateSymbol')
+} from './utils'
+import {
+    privateSymbol,
+} from './privateSymbol'
 
 function defineExternalAPI(Private, apiCreator) {
     if (!isFunction(apiCreator)) {
@@ -29,6 +30,6 @@ function defineExternalAPI(Private, apiCreator) {
     }
 }
 
-module.exports = {
+export {
     defineExternalAPI,
 }

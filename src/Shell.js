@@ -1,6 +1,6 @@
-const {enableMapSet, current, produce} = require('immer')
-const {isFunction} = require('./utils')
-const {SingularEventEmitter} = require('secure-event-emitter')
+import {enableMapSet, current, produce} from 'immer'
+import {isFunction} from './utils'
+import {SingularEventEmitter} from 'secure-event-emitter'
 
 enableMapSet()
 
@@ -78,6 +78,6 @@ class Shell {
     }
 }
 
-module.exports = {
+export {
     Shell,
 }

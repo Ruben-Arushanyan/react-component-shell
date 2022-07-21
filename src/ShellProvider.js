@@ -1,12 +1,12 @@
-const {
+import React, {
     createContext,
     memo,
-} = require('react')
+} from 'react'
 
-const {privateSymbol} = require('./privateSymbol')
-const {Shell} = require('./Shell')
+import {privateSymbol} from './privateSymbol'
+import {Shell} from './Shell'
+
 const defaultShell = new Shell()
-
 const ShellContext = createContext(defaultShell)
 
 const ShellProvider = memo((props) => {
@@ -24,7 +24,7 @@ const ShellProvider = memo((props) => {
     )
 })
 
-module.exports = {
+export {
     ShellProvider,
     ShellContext,
 }
