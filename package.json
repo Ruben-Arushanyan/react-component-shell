@@ -1,29 +1,48 @@
 {
   "name": "react-component-shell",
   "version": "2.0.0",
-  "description": "React component shell...",
+  "description": "React Component Shell is a package that allows you to create a shell object and to connect to the react component.",
   "license": "MIT",
   "homepage": "https://github.com/Ruben-Arushanyan/react-component-shell",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Ruben-Arushanyan/react-component-shell"
   },
-  "bugs": "https://github.com/Ruben-Arushanyan/react-component-shell/issues",
+  "bugs": {
+    "url": "https://github.com/Ruben-Arushanyan/react-component-shell/issues",
+    "email": "ruben.arushanyan24@gmail.com"
+  },
   "keywords": [
     "react",
     "react-component-shell"
   ],
-  "author": "Ruben Arushanyan <ruben.arushanyan24@gmail.com> (https://www.linkedin.com/in/ruben-arushanyan-42bba9235/)",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"no test specified\" && exit 0",
-    "build": "./node_modules/.bin/babel src --out-dir dist",
-    "prepare": "npm run build"
+  "author": {
+    "name": "Ruben Arushanyan",
+    "email": "ruben.arushanyan24@gmail.com",
+    "url": "https://www.linkedin.com/in/ruben-arushanyan-42bba9235/"
   },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/Ruben-Arushanyan"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "npm run to-pack --if-present; node scripts/test.js",
+    "to-pack": "npm run build --if-present; node scripts/to-pack.js",
+    "to-npm-publish": "npm run to-pack --if-present; node scripts/to-npm-publish.js"
+  },
+  "packableFiles": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist/."
+  ],
   "dependencies": {
     "immer": "^9.0.15",
-    "secure-event-emitter": "^2.0.0"
+    "secure-event-emitter": "^4.1.0"
   },
+  "sideEffects": false,
   "devDependencies": {
     "@babel/cli": "^7.18.9",
     "@babel/core": "^7.18.9",
