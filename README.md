@@ -6,6 +6,11 @@
 
 **react-component-shell** is a package that allows you to create a shell object and to connect to the react component.
 
+## Installation
+
+```bash
+npm install react-component-shell
+```
 ## Usage
 
 ```js
