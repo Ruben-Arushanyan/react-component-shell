@@ -9,8 +9,8 @@
 ## Usage
 
 ```js
-import {Shell, defineExternalAPI} from 'Libs/react-component-shell'
-import {SecureEventEmitter} from 'Libs/secure-event-emitter'
+import {Shell, defineExternalAPI} from 'react-component-shell'
+import {SecureEventEmitter} from 'secure-event-emitter'
 
 class GameShell extends Shell {
     #emitterKey = Symbol('Game Shell emitterKey')
@@ -53,7 +53,7 @@ export default defineExternalAPI(
 ## Connect to the react component
 
 ```js
-import { ShellProvider } from 'Libs/react-component-shell'
+import { ShellProvider } from 'react-component-shell'
 
 // ...
  const game_shell = new GameShell()
@@ -68,7 +68,7 @@ import { ShellProvider } from 'Libs/react-component-shell'
 ## Get the shell from the react component
 
 ```js
-import {useShell} from 'Libs/react-component-shell'
+import {useShell} from 'react-component-shell'
 
 // ...
 const shell = useShell()
@@ -78,7 +78,7 @@ const shell = useShell()
 ## Get the shell state from the react component
 
 ```js
-import {useShellState} from 'Libs/react-component-shell'
+import {useShellState} from 'react-component-shell'
 
 // ...
 const isPause = useShellState(state => state.isPause)
