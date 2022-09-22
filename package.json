@@ -1,6 +1,6 @@
 {
   "name": "react-component-shell",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "React Component Shell is a package that allows you to create a shell object and to connect to the react component.",
   "license": "MIT",
   "homepage": "https://github.com/Ruben-Arushanyan/react-component-shell",
