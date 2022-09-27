@@ -6,12 +6,12 @@ We accept pull requests for bug fixes, improvements, and new features. We'd also
 
 ### Submitting an Issue
 
-* 🐛 Open a [bug issue]() to report a bug or unexpected behavior.
-* 📃 Open a [documentation issue]() to report a documentation issue.
-* 🆕 Open a [new feature issue]() to suggest an new feature for this project.
-* 🛠️ Open an [improvement issue]() to suggest an improvement for this project.
-* 🕵 Open an [investigation issue]() to set an investigation topic.
-* 🤌🏼 Open an [proposal issue]() to suggest something.
+* 🐛 Open a [bug issue](https://github.com/Ruben-Arushanyan/react-component-shell/issues/new?template=bug.md) to report a bug or unexpected behavior.
+* 📃 Open a [documentation issue](https://github.com/Ruben-Arushanyan/react-component-shell/issues/new?template=documentation.md) to report a documentation issue.
+* 🆕 Open a [new feature issue](https://github.com/Ruben-Arushanyan/react-component-shell/issues/new?template=feature.md) to suggest an new feature for this project.
+* 🛠️ Open an [improvement issue](https://github.com/Ruben-Arushanyan/react-component-shell/issues/new?template=improvement.md) to suggest an improvement for this project.
+* 🕵 Open an [investigation issue](https://github.com/Ruben-Arushanyan/react-component-shell/issues/new?template=investigation.md) to set an investigation topic.
+* 🤌🏼 Open an [proposal issue](https://github.com/Ruben-Arushanyan/react-component-shell/issues/new?template=proposal.md) to suggest something.
 
 ### Git branch naming conventions
 
