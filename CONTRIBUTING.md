@@ -4,59 +4,57 @@ Hi! Thanks for your interest in contributing!
 
 We accept pull requests for bug fixes, improvements, and new features. We'd also love to hear about ideas for new features as issues.
 
-Please do:
+### Submitting an Issue
 
-* Check existing issues to verify that the [bug][bug issues] or [feature request][feature request issues] has not already been submitted.
-* Open an issue if things aren't working as expected.
-* Open an issue to propose a significant change.
-* Open a pull request to fix a bug.
-* Open a pull request to fix documentation about a command.
-* Open a pull request for any issue labelled [`help wanted`][hw] or [`good first issue`][gfi].
+* 🐛 Open a [bug issue]() to report a bug or unexpected behavior.
+* 📃 Open a [documentation issue]() to report a documentation issue.
+* 🆕 Open a [new feature issue]() to suggest an new feature for this project.
+* 🛠️ Open an [improvement issue]() to suggest an improvement for this project.
+* 🕵 Open an [investigation issue]() to set an investigation topic.
+* 🤌🏼 Open an [proposal issue]() to suggest something.
 
-Please avoid:
+### Git branch naming conventions
 
-* Opening pull requests for issues marked `needs-design`, `needs-investigation`, or `blocked`.
-* Adding installation instructions specifically for your OS/package manager.
-* Opening pull requests for any issue marked `core`. These issues require additional context from
-  the core CLI team at GitHub and any external pull requests will not be accepted.
+- Use issue tracker IDs in branch names.
+- Add a short descriptor of the task.
+- Use hyphens as separators.
 
-## Building the project
+Example
+```bash
+722-add-billing-module
+```
+### Submitting a pull request
 
-Prerequisites:
-- Go 1.16+
-
-Build with:
-* Unix-like systems: `make`
-* Windows: `go run script/build.go`
-
-Run the new binary as:
-* Unix-like systems: `bin/gh`
-* Windows: `bin\gh`
-
-Run tests with: `go test ./...`
-
-See [project layout documentation](../docs/project-layout.md) for information on where to find specific source files.
-
-## Submitting a pull request
-
-1. Create a new branch: `git checkout -b my-branch-name`
+1. Create a new branch: `git checkout -b 722-my-branch-name`
 1. Make your change, add tests, and ensure tests pass
-1. Submit a pull request: `gh pr create --web`
+1. Creating a pull request to the `master` branch
 
-Contributions to this project are [released][legal] to the public under the [project's open source license][license].
+### Got a Question or Problem?
 
-Please note that this project adheres to a [Contributor Code of Conduct][code-of-conduct]. By participating in this project you agree to abide by its terms.
+Do not open issues for general support questions as we want to keep GitHub issues for bug reports and feature requests. Instead, we recommend using [GitHub Discussions](https://github.com/Ruben-Arushanyan/react-component-shell/discussions) to ask support-related questions.
 
-We generate manual pages from source on every release. You do not need to submit pull requests for documentation specifically; manual pages for commands will automatically get updated after your pull requests gets accepted.
+## [License](https://github.com/Ruben-Arushanyan/react-component-shell/blob/master/LICENSE)
+
+Contributions to this project are released to the public under the [project's open source license](https://github.com/Ruben-Arushanyan/react-component-shell/blob/master/LICENSE).
+
+## [Code of Conduct](https://github.com/Ruben-Arushanyan/react-component-shell/blob/master/CODE_OF_CONDUCT.md)
+
+This project has adopted the [Contributor Covenant](https://www.contributor-covenant.org) as its Code of Conduct, and we expect project participants to adhere to it. Please read the [full text](https://github.com/Ruben-Arushanyan/react-component-shell/blob/master/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
 ## Resources
 
-- [How to Contribute to Open Source][]
-- [Using Pull Requests][]
+- [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+- [Using Pull Requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 
 
-[bug issues]: https://github.com/cli/cli/issues?q=is%3Aopen+is%3Aissue+label%3Abug
-[feature request issues]: https://github.com/cli/cli/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement
+
+
+
+
+
+
+
+
 [hw]: https://github.com/cli/cli/labels/help%20wanted
 [gfi]: https://github.com/cli/cli/labels/good%20first%20issue
 [legal]: https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-terms-of-service#6-contributions-under-repository-license

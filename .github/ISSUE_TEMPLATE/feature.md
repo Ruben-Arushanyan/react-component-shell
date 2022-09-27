@@ -1,6 +1,6 @@
 ---
 name: "🆕 Feature"
-about: Suggest an idea for this project.
+about: Suggest a new feature for this project.
 title: ''
 labels: new feature
 assignees: ruben-arushanyan
