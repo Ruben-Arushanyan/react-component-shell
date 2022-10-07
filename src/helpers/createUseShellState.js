@@ -5,17 +5,15 @@ const createUseShellState = (Context) => {
     return (selector) => {
         error_if_invalid_selector(selector)
         const shell = useContext(Context)
-        const [value, setValue] = useState(selector(shell.state))
+        const [,forceUpdate] = useState({})
 
         useEffect(() => {
-            setValue(selector(shell.state))
-            const unsubscribe = shell.subscribeSelector(selector, () => {
-                setValue(selector(shell.state))
+            return shell.subscribeSelector(selector, () => {
+                forceUpdate({})
             })
-            return () => unsubscribe()
         }, [shell, selector])
 
-        return value
+        return selector(shell.state)
     }
 }
 
