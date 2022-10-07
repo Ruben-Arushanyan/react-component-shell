@@ -39,8 +39,7 @@
     "dist/."
   ],
   "dependencies": {
-    "immer": "^9.0.15",
-    "secure-event-emitter": "^4.1.0"
+    "base-classes": "^1.0.7"
   },
   "sideEffects": false,
   "devDependencies": {
