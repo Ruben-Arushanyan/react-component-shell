@@ -39,14 +39,22 @@ export {GameProvider, useGame, useGameState}
 ```
 
 *App.js*
-```js
+```jsx
 import {GameProvider, useGame, useGameState} from './game.js'
 
-const MyGame = (props) => {
+const App = (props) => {
+    return (
+        <GameProvider>
+            <GamePauseButton />
+        </GameProvider>
+    )
+}
+
+const GamePauseButton = (props) => {
     const game = useGame()
     const paused = useGameState(state => state.paused)
 
-    onClick = () => {
+    clickHandler = () => {
         if (paused) {
             game.run()
         } else {
@@ -54,16 +62,11 @@ const MyGame = (props) => {
         }
     }
 
-    return <button onClick={onClick}>{paused ? 'Run': 'Stop'}</button>
+    return <button onClick={clickHandler}>{ paused ? 'Run' : 'Stop' }</button>
+    
 }
 
-const App = (props) => {
-    return (
-        <GameProvider>
-            <MyGame />
-        </GameProvider>
-    )
-}
+export default App
 ```
 
 
