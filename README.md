@@ -39,7 +39,7 @@ export {GameProvider, useGame, useGameState}
 ```
 
 *App.js*
-```js
+```jsx
 import {GameProvider, useGame, useGameState} from './game.js'
 
 const MyGame = (props) => {
