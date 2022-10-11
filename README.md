@@ -54,7 +54,7 @@ const GamePauseButton = (props) => {
     const game = useGame()
     const paused = useGameState(state => state.paused)
 
-    clickHandler = () => {
+    const clickHandler = () => {
         if (paused) {
             game.run()
         } else {
