@@ -1,6 +1,6 @@
 {
-    "name": "Lox Lava",
-    "short_name": "Lox Lava",
+    "name": "React Component Shell",
+    "short_name": "React Component Shell",
     "theme_color": "#2196f3",
     "background_color": "#424242",
     "display": "standalone",

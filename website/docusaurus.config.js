@@ -15,18 +15,18 @@ const additonalInfo = {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Lox Lava',
-  tagline: 'Psakecin Maroin Tvin Choban Karoin',
+  title: 'React Component Shell',
+  tagline: 'react-component-shell is a package that allows you to quickly and easily create react-contexts and implement state management.',
   url: 'https://ruben-arushanyan.github.io',
-  baseUrl: '/lox-lava/',
+  baseUrl: '/react-component-shell/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'images/favicon.ico',
   organizationName: 'Ruben-Arushanyan', // Usually your GitHub org/user name.
-  projectName: 'lox-lava', // Usually your repo name.
+  projectName: 'react-component-shell', // Usually your repo name.
 
   customFields: {
-    description: 'Descrtiption for meta tag',
+    description: 'react-component-shell is a package that allows you to quickly and easily create react-contexts and implement state management.',
     additonalInfo,
   },
 
@@ -102,19 +102,19 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/Ruben-Arushanyan/lox-lava/edit/master/website/',
+          editUrl: 'https://github.com/Ruben-Arushanyan/react-component-shell/edit/master/website/',
 	  showLastUpdateAuthor: true,
         },
-        // blog: false,
-        blog: {
-          blogTitle: 'Blog',
-          blogDescription: 'Lox Lava Blog',
-          blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/Ruben-Arushanyan/lox-lava/edit/master/website/',
-        },
+        blog: false,
+        // blog: {
+        //   blogTitle: 'Blog',
+        //   blogDescription: 'React Component Shell Blog',
+        //   blogSidebarTitle: 'All posts',
+        //   blogSidebarCount: 'ALL',
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl: 'https://github.com/Ruben-Arushanyan/react-component-shell/edit/master/website/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -129,11 +129,11 @@ const config = {
       metadata: [
         {
           name: 'keywords',
-          content: 'lox, lava, maro, karo',
+          content: 'react, reactjs, react-component-shell, component-shell, react-context, context, easy-context, context-api, state-management, react-context-state',
         },
       ],
       navbar: {
-        title: 'Lox Lava',
+        title: 'React Component Shell',
         logo: {
           alt: 'Logo',
           src: 'images/icons/icon-72x72.png',
@@ -146,15 +146,15 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left',
-          },
+          // {
+          //   to: '/blog',
+          //   label: 'Blog',
+          //   position: 'left',
+          // },
 
           // right
           {
-            href: 'https://github.com/Ruben-Arushanyan/lox-lava',
+            href: 'https://github.com/Ruben-Arushanyan/react-component-shell',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
@@ -197,17 +197,17 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Ruben-Arushanyan/lox-lava',
+                href: 'https://github.com/Ruben-Arushanyan/react-component-shell',
               },
               {
                 label: 'npm',
-                href: 'https://www.npmjs.com/package/lox-lava',
+                href: 'https://www.npmjs.com/package/react-component-shell',
               },
             ],
           },

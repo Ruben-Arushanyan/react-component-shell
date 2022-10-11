@@ -25,14 +25,11 @@ export default function HeroBanner() {
           />
         </h1>
         <h2 className={styles.heroProjectTagline}>
-            Psakecin <b>Maroyin</b>, tvin choban <b>Karoyin</b>
+            <b>Quickly</b> and <b>Easily</b> create <b>react-contexts</b> and implement <b>state</b> management.
         </h2>
         <div className={styles.indexCtas}>
           <Link className="button button--primary" to="/docs/introduction">
             Get Started
-          </Link>
-          <Link className="button button--info" to="/docs/introduction">
-            Try a Demo
           </Link>
           <span className={styles.indexCtasGitHubButtonWrapper}>
             <iframe
