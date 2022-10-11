@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
-description: react-component-shell is a package that allows you to quickly and easily create react-contexts and implement state management.
 title: Shell
 ---
 
-The Shell is a base class that provides the necessary methods and attributes for the class objects.
+The **Shell** is a base class that provides the necessary methods and attributes for the class objects.
 
 ## Import
 
@@ -14,7 +13,7 @@ import { Shell } from 'react-component-shell'
 
 ## Basic Usage
 
-Let's create a Game shell.
+Let's create a **Game** shell.
 
 ```js title="game.js"
 import {Shell} from 'react-component-shell'
@@ -72,7 +71,7 @@ game.subscribe((state, prevState) => {
 })
 
 // subscribe certain state value change which is defined by the selector.
-store.subscribeSelector(state => state.score, (value, prevValue) => {
+game.subscribeSelector(state => state.score, (value, prevValue) => {
     console.log('score changed:', value)
 })
 
