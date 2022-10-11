@@ -1,94 +1,71 @@
-[1]: https://react-component-shell.js.org
-[2]: https://github.com/ruben-arushanyan
-[3]: https://github.com/Ruben-Arushanyan/react-component-shell/blob/master/LICENSE
 # React Component Shell
-## Description
 
-**react-component-shell** is a package that allows you to create a shell object and to connect to the react component.
+**react-component-shell** is a package that allows you to quickly and easily create **react-contexts** and implement **state management**.
 
 ## Installation
 
 ```bash
 npm install react-component-shell
 ```
-## Usage
 
+## Basic Usage
+
+*game.js*
 ```js
-import {Shell, defineExternalAPI} from 'react-component-shell'
-import {SecureEventEmitter} from 'secure-event-emitter'
+import {Shell, createShellProvider} from 'react-component-shell'
 
-class GameShell extends Shell {
-    #emitterKey = Symbol('Game Shell emitterKey')
-
-    emitter = new SecureEventEmitter(
-        ['pause', 'run'],
-        this.#emitterKey
-    )
-
-    state={
-        isPause: true
-    }
-
-    // methods
-    pause = () => {
-        this.setState(state => {
-            state.isPause = true
-        })
-        this.emitter.unlock(this.#emitterKey).emit('pause')
-    }
-    run = (payload) => {
-        this.setState(state => {
-            state.isPause = false
-        })
-        this.emitter.unlock(this.#emitterKey).emit('play')
-    }
+class Game extends Shell {
+   state = { paused: true }
+   run() {
+      this.updateState(state => {
+          return {...state, paused: false}
+      })
+   }
+   stop() {
+      this.updateState(state => {
+          return {...state, paused: true}
+      })
+   }
 }
 
+const [
+    GameProvider,
+    useGame, 
+    useGameState
+] = createShellProvider({ shellClass: Game })
 
-export default defineExternalAPI(
-    GameShell,
-    (shell) => ({
-        emitter: shell.emitter,
-        pause: shell.pause,
-        run: shell.run,
-    }),
-)
+export {GameProvider, useGame, useGameState}
+
 ```
 
-## Connect to the react component
-
+*App.js*
 ```js
-import { ShellProvider } from 'react-component-shell'
+import {GameProvider, useGame, useGameState} from './game.js'
 
-// ...
- const game_shell = new GameShell()
-// ...
+const MyGame = (props) => {
+    const game = useGame()
+    const paused = useGameState(state => state.paused)
 
-    <ShellProvider shell={game_shell}>
-        <GameComponent />
-    </ShellProvider>
-// ...
+    onClick = () => {
+        if (paused) {
+            game.run()
+        } else {
+            game.stop()
+        }
+    }
+
+    return <button onClick={onClick}>{paused ? 'Run': 'Stop'}</button>
+}
+
+const App = (props) => {
+    return (
+        <GameProvider>
+            <MyGame />
+        </GameProvider>
+    )
+}
 ```
 
-## Get the shell from the react component
-
-```js
-import {useShell} from 'react-component-shell'
-
-// ...
-const shell = useShell()
-// ...
-```
-
-## Get the shell state from the react component
-
-```js
-import {useShellState} from 'react-component-shell'
-
-// ...
-const isPause = useShellState(state => state.isPause)
-// ...
-```
 
 ## [Contributing](https://github.com/ruben-arushanyan/react-component-shell/blob/master/CONTRIBUTING.md)
 
@@ -100,7 +77,7 @@ This project has adopted the [Contributor Covenant](https://www.contributor-cove
 
 ## Authors
 
-- [Ruben Arushanyan][2]
+- [Ruben Arushanyan](https://github.com/ruben-arushanyan)
 ## License
 
-[MIT License][3]
+[MIT License](https://github.com/Ruben-Arushanyan/react-component-shell/blob/master/LICENSE)
