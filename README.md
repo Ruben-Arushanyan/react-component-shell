@@ -1,4 +1,5 @@
-# React Component Shell
+# [React Component Shell](https://ruben-arushanyan.github.io/react-component-shell/)
+> You can find the full documentation on the [website](https://ruben-arushanyan.github.io/react-component-shell/)
 
 **react-component-shell** is a package that allows you to quickly and easily create **react-contexts** and implement **state management**.
 
@@ -9,6 +10,8 @@ npm install react-component-shell
 ```
 
 ## Basic Usage
+
+Let's create a Game shell and use it in the react components.
 
 *game.js*
 ```js
@@ -40,7 +43,7 @@ export {GameProvider, useGame, useGameState}
 
 *App.js*
 ```jsx
-import {GameProvider, useGame, useGameState} from './game.js'
+import {GameProvider, useGame, useGameState} from './game'
 
 const App = (props) => {
     return (
@@ -69,6 +72,17 @@ const GamePauseButton = (props) => {
 export default App
 ```
 
+<br/>
+
+## [Documentation](https://ruben-arushanyan.github.io/react-component-shell/)
+
+
+- ### [Introduction](https://ruben-arushanyan.github.io/react-component-shell/docs/introduction)
+- ### [Shell](https://ruben-arushanyan.github.io/react-component-shell/docs/shell)
+- ### [createShellProvider](https://ruben-arushanyan.github.io/react-component-shell/docs/createShellProvider)
+
+
+<br/>
 
 ## [Contributing](https://github.com/ruben-arushanyan/react-component-shell/blob/master/CONTRIBUTING.md)
 
