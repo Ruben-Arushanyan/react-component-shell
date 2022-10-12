@@ -1,5 +1,5 @@
-# [React Component Shell](https://ruben-arushanyan.github.io/react-component-shell/)
-> You can find the full documentation on the [website](https://ruben-arushanyan.github.io/react-component-shell/)
+# [React Component Shell](https://react-component-shell.js.org/)
+> You can find the full documentation on the [website](https://react-component-shell.js.org/)
 
 **react-component-shell** is a package that allows you to quickly and easily create **react-contexts** and implement **state management**.
 
@@ -75,12 +75,12 @@ export default App
 
 <br/>
 
-## [Documentation](https://ruben-arushanyan.github.io/react-component-shell/)
+## [Documentation](https://react-component-shell.js.org/)
 
 
-- ### [Introduction](https://ruben-arushanyan.github.io/react-component-shell/docs/introduction)
-- ### [Shell](https://ruben-arushanyan.github.io/react-component-shell/docs/shell)
-- ### [createShellProvider](https://ruben-arushanyan.github.io/react-component-shell/docs/createShellProvider)
+- ### [Introduction](https://react-component-shell.js.org/docs/introduction)
+- ### [Shell](https://react-component-shell.js.org/docs/shell)
+- ### [createShellProvider](https://react-component-shell.js.org/docs/createShellProvider)
 
 
 <br/>

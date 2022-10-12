@@ -17,8 +17,8 @@ const additonalInfo = {
 const config = {
   title: 'React Component Shell',
   tagline: 'react-component-shell is a package that allows you to quickly and easily create react-contexts and implement state management.',
-  url: 'https://ruben-arushanyan.github.io',
-  baseUrl: '/react-component-shell/',
+  url: 'https://react-component-shell.js.org',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'images/favicon.ico',
