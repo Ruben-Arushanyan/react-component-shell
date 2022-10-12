@@ -32,7 +32,7 @@ class Game extends Shell {
           return {...state, paused: false}
       })
    }
-   
+
    stop() {
       this.updateState(state => {
           return {...state, paused: true}
@@ -47,6 +47,7 @@ export {GameProvider, useGame, useGameState}
 
 ```
 
+Let's connect the shell in a react components.
 
 ```jsx title="App.js"
 import {GameProvider, useGame, useGameState} from './game'

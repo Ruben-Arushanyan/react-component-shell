@@ -25,7 +25,7 @@ class Game extends Shell {
           return {...state, paused: false}
       })
    }
-   
+
    stop() {
       this.updateState(state => {
           return {...state, paused: true}
@@ -40,6 +40,7 @@ const [ GameProvider, useGame, useGameState ] = createShellProvider({ shellClass
 export {GameProvider, useGame, useGameState}
 
 ```
+Let's connect the shell in a react components.
 
 *App.js*
 ```jsx
