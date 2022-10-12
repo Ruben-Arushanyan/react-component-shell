@@ -19,11 +19,13 @@ import {Shell, createShellProvider} from 'react-component-shell'
 
 class Game extends Shell {
    state = { paused: true }
+
    run() {
       this.updateState(state => {
           return {...state, paused: false}
       })
    }
+   
    stop() {
       this.updateState(state => {
           return {...state, paused: true}
@@ -31,11 +33,9 @@ class Game extends Shell {
    }
 }
 
-const [
-    GameProvider,
-    useGame, 
-    useGameState
-] = createShellProvider({ shellClass: Game })
+
+// Let's create a react-context provider and two hooks to access the shell and shell state.
+const [ GameProvider, useGame, useGameState ] = createShellProvider({ shellClass: Game })
 
 export {GameProvider, useGame, useGameState}
 
