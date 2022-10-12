@@ -40,7 +40,7 @@ export {Game}
 Now let's create a game object and interact with it․
 
 ```js title="index.js"
-import {Game} from './game'
+import {Game} from './game.js'
 
 // create game instance
 const game = new Game()

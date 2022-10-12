@@ -44,7 +44,7 @@ Let's connect the shell in a react components.
 
 *App.js*
 ```jsx
-import {GameProvider, useGame, useGameState} from './game'
+import {GameProvider, useGame, useGameState} from './game.js'
 
 const App = (props) => {
     return (

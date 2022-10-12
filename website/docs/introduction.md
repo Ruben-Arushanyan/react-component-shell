@@ -50,7 +50,7 @@ export {GameProvider, useGame, useGameState}
 Let's connect the shell in a react components.
 
 ```jsx title="App.js"
-import {GameProvider, useGame, useGameState} from './game'
+import {GameProvider, useGame, useGameState} from './game.js'
 
 const App = (props) => {
     return (
