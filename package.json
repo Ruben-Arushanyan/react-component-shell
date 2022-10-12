@@ -1,6 +1,6 @@
 {
   "name": "react-component-shell",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "react-component-shell is a package that allows you to quickly and easily create react-contexts and implement state management.",
   "license": "MIT",
   "homepage": "https://react-component-shell.js.org",
