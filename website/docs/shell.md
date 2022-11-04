@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Shell
+title: 'class Shell'
 ---
 
 The **Shell** is a base class that provides the necessary methods and attributes for the class objects.
