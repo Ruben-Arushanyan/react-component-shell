@@ -1,9 +1,9 @@
 ---
 sidebar_position: 3
-title: 'class Shell'
+title: 'Shell'
 ---
 
-The **Shell** is a base class that provides the necessary methods and attributes for the class objects.
+The **Shell** is a base class that provides additional methods for state management.
 
 ## Import
 
