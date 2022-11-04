@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 **createShellProvider** is a function with the help of which we can create a react-context provider and hooks for a certain shell type.
@@ -12,7 +12,7 @@ import { createShellProvider } from 'react-component-shell'
 
 ## Basic Usage
 
-Let's create a `Count` class, which stores the count state and has an `increment()` method to add the count by one.
+Let's create a `Count` class, which stores the count **state** and has an `increment()` method to add the count by one. The `Count` class inherits from the `Shell` class, which provides additional methods for **state management**. For example, the `updateState()` method, with the help of which we update the **state** of the `Count` class. For more details about the `Shell` base class, please see them [here](/docs/shell)
 
 ```js title="Count.js"
 import { Shell } from 'react-component-shell'
