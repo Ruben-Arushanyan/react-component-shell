@@ -95,8 +95,7 @@ In the example above, we can apply the `useCount()` or `useCountState()` hooks t
 ### `createShellProvider(options?)`
 
 - **options** ? `<Object>`
-    - **shellClass** ? `<Class>`
-    
+    - **shellClass** ? `<Class>`  
     Any JavaScript class that inherits from the [Shell](/docs/shell) class.
 
     Example:
@@ -107,7 +106,10 @@ In the example above, we can apply the `useCount()` or `useCountState()` hooks t
         state = {count: 0}
     }
 
-    const [CountProvider, useCount, useCountState] = createShellProvider({ shellClass: Count })
+    const [CountProvider, useCount, useCountState] = createShellProvider({
+        // highlight-next-line
+        shellClass: Count
+    })
     ```
     Default: 
     ```js
@@ -115,8 +117,7 @@ In the example above, we can apply the `useCount()` or `useCountState()` hooks t
     ```
     <br/>
 
-    - **customProviderWrapper** ? `<ReactComponent>`
-
+    - **customProviderWrapper** ? `<ReactComponent>`  
     Any react component that overrides the shell provider component, and with the use of that, we can customize the shell provider component to our requirements.
 
     Example:
@@ -138,6 +139,7 @@ In the example above, we can apply the `useCount()` or `useCountState()` hooks t
 
     const [CountProvider, useCount, useCountState] = createShellProvider({ 
         shellClass: Count,
+        // highlight-next-line
         customProviderWrapper: CustomProvider
     })
     ```

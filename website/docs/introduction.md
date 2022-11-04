@@ -7,12 +7,10 @@ title: Introduction
 
 ## Description
 
-**React Component Shell** is a package that allows you to quickly and easily create **react-contexts** and implement **state management**.
+**React Component Shell** is a package that allows you to quickly and easily create **react-contexts** and implement **state management**.  
 
-**Shell** is a JavaScript class that has certain methods and properties to provide some type of functionality in the project.
-
+**Shell** is a JavaScript class that has certain methods and properties to provide some type of functionality in the project.  
 The main concept is to create **shell objects** and connect them to react components.
-
 
 ## Installation
 
@@ -23,7 +21,6 @@ npm install react-component-shell
 ## Basic Usage
 
 Let's create a **Game** shell that has two methods: `run()` and `stop()` that update the `.paused` property of the **state**.
-
 
 ```js title="game.js"
 import {Shell} from 'react-component-shell'

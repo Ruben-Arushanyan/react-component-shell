@@ -3,8 +3,7 @@
 
 **react-component-shell** is a package that allows you to quickly and easily create **react-contexts** and implement **state management**.
 
-**Shell** is a JavaScript class that has certain methods and properties to provide some type of functionality in the project.
-
+**Shell** is a JavaScript class that has certain methods and properties to provide some type of functionality in the project.  
 The main concept is to create **shell objects** and connect them to react components.
 
 ## Installation
@@ -51,9 +50,8 @@ const [ GameProvider, useGame, useGameState ] = createShellProvider({ shellClass
 
 export {GameProvider, useGame, useGameState}
 ```
-The `createShellProvider()` function returns an array with three values. The first value is a provider component, the second value is a react hook that returns a shell object, and the last value is a react hook that return a state value by a selector.
-
-In our example, we created the `GameProvider` provider and `useGame`, `useGameState` hooks.
+The `createShellProvider()` function returns an array with three values. The first value is a provider component, the second value is a react hook that returns a shell object, and the last value is a react hook that return a state value by a selector.  
+In our example, we created the `GameProvider` provider and `useGame`, `useGameState` hooks.  
 
 Now let's use them in react app.
 
