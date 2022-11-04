@@ -3,6 +3,10 @@
 
 **react-component-shell** is a package that allows you to quickly and easily create **react-contexts** and implement **state management**.
 
+**Shell** is a JavaScript class that has certain methods and properties to provide some type of functionality in the project.
+
+The main concept is to create **shell objects** and connect them to react components.
+
 ## Installation
 
 ```bash
