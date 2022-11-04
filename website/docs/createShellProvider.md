@@ -15,7 +15,7 @@ import { createShellProvider } from 'react-component-shell'
 
 Let's create a `Count` class, which stores the count **state** and has an `increment()` method to add the count by one. The `Count` class inherits from the `Shell` class, which provides additional methods for **state management**. For example, the `updateState()` method, with the help of which we update the **state** of the `Count` class. For more details about the `Shell` base class, please see them [here](/docs/shell)
 
-```js title="Count.js"
+```js title="count.js"
 import { Shell } from 'react-component-shell'
 
 class Count extends Shell {
@@ -35,7 +35,7 @@ Now let's use the `createShellProvider()` function to create a react-context pro
 
 ```js title="count-context.js"
 import { createShellProvider } from 'react-component-shell'
-import { Count } from './Count.js'
+import { Count } from './count.js'
 
 const [
     CountProvider,

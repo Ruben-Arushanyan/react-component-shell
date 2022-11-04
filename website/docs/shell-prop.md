@@ -9,7 +9,7 @@ Sometimes we need to access the **shell object** outside of react-components and
 
 Let's create a `Count` shell, which stores the count **state** and has an `increment()` method to add the count by one.
 
-```js title="Count.js"
+```js title="count.js"
 import { Shell } from 'react-component-shell'
 
 class Count extends Shell {
@@ -45,7 +45,7 @@ Now let's use `<CountProvider>` with **shell** property.
 
 ```jsx title="App.js"
 import {CountProvider, useCount, useCountState} from './count-context.js'
-import {Count} from './Count.js'
+import {Count} from './count.js'
 
 // highlight-start
 const countShell = new Count()
