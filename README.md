@@ -101,8 +101,9 @@ In the example above, we can apply the `useGame()` or `useGameState()` hooks to 
 
 
 - ### [Introduction](https://react-component-shell.js.org/docs/introduction)
-- ### [Shell](https://react-component-shell.js.org/docs/shell)
 - ### [createShellProvider](https://react-component-shell.js.org/docs/createShellProvider)
+- ### [Shell](https://react-component-shell.js.org/docs/shell)
+
 
 
 <br/>
